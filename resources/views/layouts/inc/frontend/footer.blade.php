@@ -60,16 +60,16 @@
                 <div class="col-md-4">
                     <div class="social-media">
                         Get Connected:
-                        @if($appSetting->facebook)
+                        @if(isset($appSetting) && $appSetting->facebook)
                             <a href="{{ $appSetting->facebook }}" target="_blank"><i class="fa fa-facebook"></i></a>
                         @endif
-                        @if($appSetting->twitter)
+                        @if(isset($appSetting) && $appSetting->twitter)
                             <a href="{{ $appSetting->twitter }}" target="_blank"><i class="fa fa-twitter"></i></a>
                         @endif
-                        @if($appSetting->instagram)
+                        @if(isset($appSetting) && $appSetting->instagram)
                             <a href="{{ $appSetting->instagram }}" target="_blank"><i class="fa fa-instagram"></i></a>
                         @endif
-                        @if($appSetting->youtube)
+                        @if(isset($appSetting) && $appSetting->youtube)
                             <a href="{{ $appSetting->youtube }}" target="_blank"><i class="fa fa-youtube"></i></a>
                         @endif
                     </div>
