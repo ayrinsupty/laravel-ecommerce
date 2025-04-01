@@ -110,13 +110,14 @@ class CheckoutShow extends Component
 
     public function render()
     {
-        $this->fullname = auth()->user()->name;
-        $this->email = auth()->user()->email;
+        $user = auth()->user();
 
-        $this->phone = auth()->user()->userDetail->phone;
-        $this->pincode = auth()->user()->userDetail->pin_code;
-        $this->address = auth()->user()->userDetail->address;
-
+        $this->fullname = $user->name ?? '';
+        $this->phone = $user->userDetail->phone ?? ''; // Use null coalescing to avoid errors
+        $this->email = $user->email ?? '';
+        $this->pincode = $user->userDetail->pincode ?? '';
+        $this->address = $user->userDetail->address ?? '';
+        
         $this->totalAmount = $this->totalAmount();
         return view('livewire.frontend.checkout.checkout-show', [
 

@@ -30,32 +30,28 @@
                                 <div class="row">
                                     <div class="col-md-6 mb-3">
                                         <label>Full Name</label>
-                                        <input type="text" wire:model.defer="fullname" class="form-control"
-                                            placeholder="Enter Full Name" />
+                                        <input type="text" wire:model.defer="fullname" class="form-control" placeholder="Enter Full Name" />
                                         @error('fullname')
                                             <small class="text-danger">{{ $message }}</small>
                                         @enderror
                                     </div>
                                     <div class="col-md-6 mb-3">
                                         <label>Phone Number</label>
-                                        <input type="phone" wire:model.defer="phone" class="form-control"
-                                            placeholder="Enter Phone Number" />
+                                        <input type="phone" wire:model.defer="phone" class="form-control" placeholder="Enter Phone Number" />
                                         @error('phone')
                                             <small class="text-danger">{{ $message }}</small>
                                         @enderror
                                     </div>
                                     <div class="col-md-6 mb-3">
                                         <label>Email Address</label>
-                                        <input type="email" wire:model.defer="email" class="form-control"
-                                            placeholder="Enter Email Address" />
+                                        <input type="email" wire:model.defer="email" class="form-control" placeholder="Enter Email Address" />
                                         @error('email')
                                             <small class="text-danger">{{ $message }}</small>
                                         @enderror
                                     </div>
                                     <div class="col-md-6 mb-3">
                                         <label>Pin-code (Zip-code)</label>
-                                        <input type="number" wire:model.defer="pincode" class="form-control"
-                                            placeholder="Enter Pin-code" />
+                                        <input type="number" wire:model.defer="pincode" class="form-control" placeholder="Enter Pin-code" />
                                         @error('pincode')
                                             <small class="text-danger">{{ $message }}</small>
                                         @enderror
