@@ -220,7 +220,8 @@
 
     <br>
     <p class="text-center">
-        Thank your for shopping with EShop
+        Thank you for shopping with EShop! If you have any questions, feel free to contact us 
+        at {{ $appSetting->email }} or visit our website at {{ $appSetting->website_url ?? '#' }}.
     </p>
 
 </body>
