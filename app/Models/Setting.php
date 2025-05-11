@@ -15,6 +15,7 @@ class Setting extends Model
         'website_name',
         'website_url',
         'page_title',
+        'page_description',
         'meta_keyword',
         'meta_description',
         'address',

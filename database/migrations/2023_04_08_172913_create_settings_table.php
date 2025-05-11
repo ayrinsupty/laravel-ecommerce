@@ -19,6 +19,10 @@ return new class extends Migration
             $table->string('website_name')->nullable();
             $table->string('website_url')->nullable();
             $table->string('page_title')->nullable();
+            $table->string('page_description', 500)->nullable();
+
+            // Meta tags for SEO
+            $table->string('meta_title')->nullable();
             $table->string('meta_keyword', 500)->nullable();
             $table->string('meta_description', 500)->nullable();
 

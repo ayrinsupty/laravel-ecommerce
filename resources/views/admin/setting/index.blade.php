@@ -34,6 +34,10 @@
                             <input type="text" name="page_title" value="{{ $setting->page_title ?? '' }}" class="form-control">
                         </div>
                         <div class="col-md-6 mb-3">
+                            <label for="">Page Description</label>
+                            <textarea name="page_description" class="form-control" rows="3">{{ $setting->page_description ?? '' }}</textarea>
+                        </div>
+                        <div class="col-md-6 mb-3">
                             <label for="">Meta Keywords</label>
                             <textarea name="meta_keyword" class="form-control" rows="3">{{ $setting->meta_keyword ?? '' }}</textarea>
                         </div>
