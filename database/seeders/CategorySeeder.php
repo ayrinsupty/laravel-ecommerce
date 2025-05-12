@@ -14,9 +14,9 @@ class CategorySeeder extends Seeder
             'slug' => 'electronics',
             'description' => 'Latest electronic gadgets and devices.',
             'image' => 'uploads/category/electronics.jpg', // Ensure this path exists
-            'meta_title' => 'Electronics - EShop',
+            'meta_title' => 'Electronics - QBuy',
             'meta_keyword' => 'electronics, gadgets, devices',
-            'meta_description' => 'Discover the latest electronic gadgets and devices at EShop.',
+            'meta_description' => 'Discover the latest electronic gadgets and devices at QBuy.',
             'status' => 1,
         ]);
     }

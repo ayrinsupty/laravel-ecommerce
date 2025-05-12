@@ -8,7 +8,9 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
-                    <h4>New Arrivals</h4>
+                    <h4>New Arrivals
+                        <a href="{{ url('collections') }}" class="btn-view-more">Shop More</a>
+                    </h4>
                     <div class="underline mb-4"></div>
                 </div>
 
@@ -47,10 +49,6 @@
                         <h4>No Products Available!</h4>
                     </div>
                 @endforelse
-
-                <div class="text-center">
-                    <a href="{{ url('collections') }}" class="btn btn-warning px-3">View More</a>
-                </div>
             </div>
         </div>
     </div>

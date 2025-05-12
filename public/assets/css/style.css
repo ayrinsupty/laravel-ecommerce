@@ -1,121 +1,250 @@
 /*
 |--------------------------------------------------------------------------
-| Slider Carousel start
+| Slider Carousel
 |--------------------------------------------------------------------------
 */
-.carousel-item .custom-carousel-content{
+@media (max-width: 600px) {
+    .carousel-item img {
+        height: 250px; /* Reduce height for smaller screens */
+    }
+}
+/* Fix the slider size */
+.carousel-item img {
+    width: 100%; /* Ensure the image spans the full width of the container */
+    height: 600px; /* Set a fixed height for the slider */
+    object-fit: cover; /* Ensure the image scales properly without distortion */
+}
+.carousel-item .custom-carousel-content {
     width: 50%;
     transform: translate(0%, -10%);
 }
-.custom-carousel-content{
-    text-align: start;
+
+/* Fix text visibility in the slider */
+.custom-carousel-content {
+    text-align: center; /* Center-align text */
+    color: #fff; /* Ensure text color is white for visibility */
+    background: rgba(
+        0,
+        0,
+        0,
+        0.5
+    ); /* Add a semi-transparent background for better contrast */
+    padding: 20px; /* Add padding around the text */
+    border-radius: 8px; /* Optional: Add rounded corners */
+    display: inline-block; /* Ensure the content is inline */
+    max-width: 90%; /* Prevent text from overflowing */
+    margin: 0 auto; /* Center the content horizontally */
 }
-.custom-carousel-content h1{
-    font-size: 40px;
+
+.custom-carousel-content h1 {
+    font-size: 28px; /* Adjust font size for mobile */
     font-weight: 700;
     color: #fff;
-    margin-bottom: 30px;
+    margin-bottom: 15px;
 }
-.custom-carousel-content h1 span{
-    color: #fbff00;
-}
-.custom-carousel-content p{
-    font-size: 18px;
+
+.custom-carousel-content p {
+    font-size: 16px; /* Adjust font size for mobile */
     font-weight: 400;
     color: #fff;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
 }
-.custom-carousel-content .btn-slider{
+
+.custom-carousel-content .btn-slider {
     border: 1px solid #fff;
     border-radius: 0px;
     padding: 8px 26px;
     color: #fff;
-    font-size: 18px;
+    font-size: 16px; /* Adjust button font size */
     font-weight: 600;
     letter-spacing: 0.5px;
+    background-color: transparent;
+    transition: background-color 0.3s ease;
+}
+
+.custom-carousel-content .btn-slider:hover {
+    background-color: #fff;
+    color: #000;
+}
+
+/* Ensure text is visible on smaller screens */
+@media (max-width: 600px) {
+    .custom-carousel-content {
+        background: rgba(
+            0,
+            0,
+            0,
+            0.7
+        ); /* Darker background for better contrast */
+        padding: 15px;
+    }
+
+    .custom-carousel-content h1 {
+        font-size: 20px; /* Smaller font size for mobile */
+    }
+
+    .custom-carousel-content p {
+        font-size: 14px; /* Smaller font size for mobile */
+    }
+
+    .custom-carousel-content .btn-slider {
+        font-size: 14px; /* Smaller button font size */
+        padding: 6px 20px;
+    }
+}
+
+.custom-carousel-content h1 {
+    font-size: 28px; /* Adjust font size for mobile */
+    font-weight: 700;
+    color: #fff;
+    margin-bottom: 15px;
+}
+
+.custom-carousel-content p {
+    font-size: 16px; /* Adjust font size for mobile */
+    font-weight: 400;
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+.custom-carousel-content .btn-slider {
+    border: 1px solid #fff;
+    border-radius: 0px;
+    padding: 8px 26px;
+    color: #fff;
+    font-size: 16px; /* Adjust button font size */
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    background-color: transparent;
+    transition: background-color 0.3s ease;
+}
+
+.custom-carousel-content .btn-slider:hover {
+    background-color: #fff;
+    color: #000;
+}
+
+/* Ensure text is visible on smaller screens */
+@media (max-width: 600px) {
+    .custom-carousel-content {
+        background: rgba(
+            0,
+            0,
+            0,
+            0.7
+        ); /* Darker background for better contrast */
+        padding: 15px;
+    }
+
+    .custom-carousel-content h1 {
+        font-size: 20px; /* Smaller font size for mobile */
+    }
+
+    .custom-carousel-content p {
+        font-size: 14px; /* Smaller font size for mobile */
+    }
+
+    .custom-carousel-content .btn-slider {
+        font-size: 14px; /* Smaller button font size */
+        padding: 6px 20px;
+    }
 }
 
 /*
 |--------------------------------------------------------------------------
-| Navbar Start
+| Navbar
 |--------------------------------------------------------------------------
 */
-.main-navbar{
+.main-navbar {
     border-bottom: 1px solid #ccc;
 }
-.main-navbar .top-navbar{
+.main-navbar .top-navbar {
     background-color: #c1a162;
     padding-top: 10px;
     padding-bottom: 10px;
 }
-.main-navbar .top-navbar .brand-name{
+.main-navbar .top-navbar .brand-name {
     color: #fff;
 }
-.main-navbar .top-navbar .nav-link{
+.main-navbar .top-navbar .nav-link {
     color: #fff;
     font-size: 16px;
     font-weight: 500;
 }
-.main-navbar .top-navbar .dropdown-menu{
-    padding: 0px 0px;
-    border-radius: 0px;
-}
-.main-navbar .top-navbar .dropdown-menu .dropdown-item{
-    padding: 8px 16px;
-    border-bottom: 1px solid #ccc;
-    font-size: 14px;
-}
-.main-navbar .top-navbar .dropdown-menu .dropdown-item i{
-    width: 20px;
-    text-align: center;
-    color: #c1a162;
-    font-size: 14px;
-}
-.main-navbar .navbar{
+.main-navbar .navbar {
     padding: 0px;
     background-color: #dddddd;
 }
-.main-navbar .navbar .nav-item .nav-link{
+.main-navbar .navbar .nav-item .nav-link {
     padding: 8px 20px;
     color: #000;
     font-size: 15px;
 }
 
 @media only screen and (max-width: 600px) {
-    .main-navbar .top-navbar .nav-link{
+    .main-navbar .top-navbar .nav-link {
         font-size: 12px;
         padding: 8px 10px;
     }
 }
 
+/*
+|--------------------------------------------------------------------------
+| Body Background
+|--------------------------------------------------------------------------
+*/
 body {
-    background: linear-gradient(to right, #27a19f5d, #feb47b); /* Gradient background */
-    color: #c1a162; /* Optional: Set a default text color */
+    background: linear-gradient(
+        to right,
+        #6f8372,
+        #c58121
+    ); /* Gradient background for a vibrant look */
+    color: #ffffff; /* Default text color */
+    font-family: "Poppins", sans-serif; /* Modern and clean font */
+    font-size: 16px; /* Base font size */
+    line-height: 1.6; /* Improve readability */
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden; /* Prevent horizontal scrolling */
+}
+/* Add hover effects for links */
+a {
+    color: #c1a162; /* Accent color for links */
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #feb47b; /* Slightly lighter color on hover */
+}
+/* Add smooth scrolling for better user experience */
+html {
+    scroll-behavior: smooth;
 }
 
 /*
 |--------------------------------------------------------------------------
-| Category Start
+| Category Section
 |--------------------------------------------------------------------------
 */
-.category-card{
+.category-card {
     border: 1px solid #ddd;
     box-shadow: 0 0.125rem 0.25rem rgb(0 0 0 / 8%);
     margin-bottom: 24px;
     background-color: #c1a162;
 }
-.category-card a{
+.category-card a {
     text-decoration: none;
 }
-.category-card .category-card-img{
+.category-card .category-card-img {
     max-height: 260px;
     overflow: hidden;
     border-bottom: 1px solid #ccc;
 }
-.category-card .category-card-body{
+.category-card .category-card-body {
     padding: 10px 16px;
 }
-.category-card .category-card-body h5{
+.category-card .category-card-body h5 {
     margin-bottom: 0px;
     font-size: 18px;
     font-weight: 600;
@@ -128,15 +257,15 @@ body {
 | Product Card
 |--------------------------------------------------------------------------
 */
-.product-card{
+.product-card {
     background-color: #fff;
     border: 1px solid #ccc;
     margin-bottom: 24px;
 }
-.product-card a{
+.product-card a {
     text-decoration: none;
 }
-.product-card .stock{
+.product-card .stock {
     position: absolute;
     color: #fff;
     border-radius: 4px;
@@ -144,18 +273,18 @@ body {
     margin: 8px;
     font-size: 12px;
 }
-.product-card .product-card-img{
+.product-card .product-card-img {
     max-height: 260px;
     overflow: hidden;
     border-bottom: 1px solid #ccc;
 }
-.product-card .product-card-img img{
+.product-card .product-card-img img {
     width: 100%;
 }
-.product-card .product-card-body{
+.product-card .product-card-body {
     padding: 10px 10px;
 }
-.product-card .product-card-body .product-brand{
+.product-card .product-card-body .product-brand {
     font-size: 14px;
     font-weight: 400;
     margin-bottom: 4px;
@@ -164,7 +293,7 @@ body {
     text-overflow: ellipsis;
     overflow: hidden;
 }
-.product-card .product-card-body .product-name{
+.product-card .product-card-body .product-name {
     font-size: 20px;
     font-weight: 600;
     color: #000;
@@ -172,184 +301,24 @@ body {
     text-overflow: ellipsis;
     overflow: hidden;
 }
-.product-card .product-card-body .selling-price{
+.product-card .product-card-body .selling-price {
     font-size: 22px;
     color: #000;
     font-weight: 600;
     margin-right: 8px;
 }
-.product-card .product-card-body .original-price{
+.product-card .product-card-body .original-price {
     font-size: 18px;
     color: #937979;
     font-weight: 400;
     text-decoration: line-through;
 }
-.product-card .product-card-body .btn1{
+.product-card .product-card-body .btn1 {
     border: 1px solid;
     margin-right: 3px;
     border-radius: 0px;
     font-size: 12px;
     margin-top: 10px;
-}
-
-/*
-|--------------------------------------------------------------------------
-| Product View
-|--------------------------------------------------------------------------
-*/
-.product-view .product-name{
-    font-size: 24px;
-    color: #c1a162;
-}
-.product-view .product-name .label-stock{
-    font-size: 13px;
-    padding: 4px 13px;
-    border-radius: 5px;
-    color: #fff;
-    box-shadow: 0 0.125rem 0.25rem rgb(0 0 0 / 8%);
-    float: right;
-}
-.product-view .product-path{
-    font-size: 13px;
-    font-weight: 500;
-    color: #252525;
-    margin-bottom: 16px;
-}
-.product-view .selling-price{
-    font-size: 26px;
-    color: #000;
-    font-weight: 600;
-    margin-right: 8px;
-}
-.product-view .original-price{
-    font-size: 18px;
-    color: #937979;
-    font-weight: 400;
-    text-decoration: line-through;
-}
-.product-view .btn1{
-    border: 1px solid;
-    margin-right: 3px;
-    border-radius: 0px;
-    font-size: 14px;
-    margin-top: 10px;
-}
-.product-view .btn1:hover{
-    background-color: #c1a162;
-    color: #fff;
-}
-.product-view .input-quantity{
-    border: 1px solid #000;
-    margin-right: 3px;
-    font-size: 12px;
-    margin-top: 10px;
-    width: 58px;
-    outline: none;
-    text-align: center;
-}
-
-/*
-|--------------------------------------------------------------------------
-| Color Selection Label
-|--------------------------------------------------------------------------
-*/
-.colorSelectionLabel{
-    color: #000;
-    padding: 2px 10px;
-    border: 1px solid #000;
-    border-radius: 4px;
-    font-size: 14px;
-    cursor: pointer;
-}
-
-.colorSelectionLabel:active{
-    background-color: #fff !important;
-    border: 2px solid #000;
-}
-
-/*
-|--------------------------------------------------------------------------
-| Cart or Wishlist
-|--------------------------------------------------------------------------
-*/
-.shopping-cart .cart-header{
-    padding: 10px;
-}
-.shopping-cart .cart-header h4{
-    font-size: 18px;
-    margin-bottom: 0px;
-}
-.shopping-cart .cart-item a{
-    text-decoration: none;
-}
-.shopping-cart .cart-item{
-    background-color: #fff;
-    box-shadow: 0 0.125rem 0.25rem rgb(0 0 0 / 8%);
-    padding: 10px 10px;
-    margin-top: 10px;
-}
-.shopping-cart .cart-item .product-name{
-    font-size: 16px;
-    font-weight: 600;
-    width: 100%;
-    white-space: nowrap;
-    text-overflow: ellipsis;
-    overflow: hidden;
-    cursor: pointer;
-}
-.shopping-cart .cart-item .price{
-    font-size: 16px;
-    font-weight: 600;
-    padding: 4px 2px;
-}
-.shopping-cart .btn1{
-    border: 1px solid;
-    margin-right: 3px;
-    border-radius: 0px;
-    font-size: 10px;
-}
-.shopping-cart .btn1:hover{
-    background-color: #c1a162;
-    color: #fff;
-}
-.shopping-cart .input-quantity{
-    border: 1px solid #000;
-    margin-right: 3px;
-    font-size: 12px;
-    width: 40%;
-    outline: none;
-    text-align: center;
-}
-/* Cart or Wishlist */
-
-
-
-/*
-|--------------------------------------------------------------------------
-| Checkout
-|--------------------------------------------------------------------------
-*/
-.checkout .form-control{
-    border-radius: 0px !important;
-}
-.checkout .form-control:focus{
-    border: 1px solid #000 !important;
-    box-shadow: none !important;
-}
-.checkout .nav-link{
-    border: 1px solid #000;
-    border-radius: 0px;
-    margin-bottom: 8px;
-}
-.checkout .tab-content{
-    padding-right: 10px;
-}
-
-.underline{
-    height: 4px;
-    width: 100px;
-    background-color: #c1a162;
-    margin: 10px 0px;
 }
 
 /*
@@ -357,37 +326,515 @@ body {
 | Footer
 |--------------------------------------------------------------------------
 */
-.footer-area{
+.footer-area {
     padding: 40px 0px;
     background-color: #c1a162;
     color: #fff;
 }
-.footer-area a{
+.footer-area a {
     text-decoration: none;
 }
-.footer-area .footer-heading{
+.footer-area .footer-heading {
     font-size: 24px;
     color: #fff;
 }
-.footer-area .footer-underline{
+.footer-area .footer-underline {
     height: 1px;
     width: 70px;
     background-color: #ddd;
     margin: 10px 0px;
 }
-.copyright-area{
+.copyright-area {
     padding: 14px 0px;
     background-color: #262626;
 }
-.copyright-area p{
+.copyright-area p {
     margin-bottom: 0px;
     color: #fff;
 }
-.copyright-area .social-media{
-    text-align: end;
+
+/* View More Button */
+.btn-view-more {
+    display: inline-block;
+    background-color: #c1a162; /* Button background color */
+    color: #fff; /* Button text color */
+    font-size: 16px; /* Font size */
+    font-weight: 600; /* Font weight */
+    padding: 10px 20px; /* Padding for the button */
+    border: 2px solid #c1a162; /* Border color */
+    border-radius: 5px; /* Rounded corners */
+    text-transform: uppercase; /* Uppercase text */
+    text-decoration: none; /* Remove underline */
+    transition: all 0.3s ease; /* Smooth transition for hover effects */
+    animation: pulse 2s infinite; /* Add a pulsing animation */
 }
-.copyright-area .social-media a{
-    margin: 0px 10px;
+
+.btn-view-more:hover {
+    background-color: #fff; /* Change background color on hover */
+    color: #c1a162; /* Change text color on hover */
+    border-color: #c1a162; /* Keep the border color consistent */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Add a shadow effect */
+    transform: translateY(-3px); /* Slightly lift the button on hover */
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.05);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+/* Login and Register Page Styles */
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(
+        to right,
+        #6f8372,
+        #c58121
+    ); /* Gradient background */
+    padding: 20px;
+}
+
+.login-card {
+    background: #fff;
+    padding: 30px 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+}
+
+.login-title {
+    font-size: 28px;
+    font-weight: 700;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.login-subtitle {
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.form-group label {
+    font-size: 14px;
+    color: #333;
+    margin-bottom: 5px;
+    display: block;
+}
+
+.form-control {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 14px;
+    color: #333;
+}
+
+.form-control:focus {
+    border-color: #ff7e5f;
+    box-shadow: 0 0 5px rgba(255, 126, 95, 0.5);
+}
+
+.btn-login {
+    background: #ff7e5f;
     color: #fff;
-    width: 20px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    width: 100%;
+}
+
+.btn-login:hover {
+    background: #feb47b;
+}
+
+.login-footer {
+    margin-top: 15px;
+    font-size: 14px;
+    color: #666;
+}
+
+.login-footer a {
+    color: #ff7e5f;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.login-footer a:hover {
+    color: #feb47b;
+}
+
+/* Password Reset Page Styles (Same as Login Page) */
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(
+        to right,
+        #6f8372,
+        #c58121
+    ); /* Gradient background */
+    padding: 20px;
+}
+
+.login-card {
+    background: #fff;
+    padding: 30px 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+}
+
+.login-title {
+    font-size: 28px;
+    font-weight: 700;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.login-subtitle {
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.form-group label {
+    font-size: 14px;
+    color: #333;
+    margin-bottom: 5px;
+    display: block;
+}
+
+.form-control {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 14px;
+    color: #333;
+}
+
+.form-control:focus {
+    border-color: #ff7e5f;
+    box-shadow: 0 0 5px rgba(255, 126, 95, 0.5);
+}
+
+.btn-login {
+    background: #ff7e5f;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    width: 100%;
+}
+
+.btn-login:hover {
+    background: #feb47b;
+}
+
+.home-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(
+        to right,
+        #6f8372,
+        #c58121
+    ); /* Gradient background */
+    color: #333;
+    text-align: center;
+}
+
+.welcome-card {
+    background: rgba(255, 255, 255, 0.9);
+    padding: 30px 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.welcome-card h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.welcome-card p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.welcome-card .btn {
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+}
+
+/* Sidebar Styles */
+.card {
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.card-header {
+    font-size: 18px;
+    font-weight: bold;
+    padding: 10px 15px;
+}
+
+/* Product Card Styles */
+.product-card {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.product-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+.product-card-img {
+    position: relative;
+    overflow: hidden;
+    height: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #f9f9f9;
+}
+
+.product-card-img img {
+    max-height: 100%;
+    max-width: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.product-card-img img:hover {
+    transform: scale(1.1);
+}
+
+.stock {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    padding: 5px 10px;
+    font-size: 12px;
+    font-weight: bold;
+    color: #fff;
+    border-radius: 4px;
+}
+
+.bg-success {
+    background-color: #28a745;
+}
+
+.bg-danger {
+    background-color: #dc3545;
+}
+
+.product-card-body {
+    padding: 15px;
+    text-align: center;
+}
+
+.product-brand {
+    font-size: 14px;
+    color: #888;
+    margin-bottom: 5px;
+}
+
+.product-name {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.product-name a {
+    color: #333;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.product-name a:hover {
+    color: #ff7e5f;
+}
+
+.product-prices {
+    margin-bottom: 15px;
+}
+
+.selling-price {
+    font-size: 20px;
+    font-weight: bold;
+    color: #ff7e5f;
+    margin-right: 10px;
+}
+
+.original-price {
+    font-size: 16px;
+    color: #888;
+    text-decoration: line-through;
+}
+
+.product-actions {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.btn-add-to-cart,
+.btn-add-to-wishlist {
+    display: inline-block;
+    padding: 8px 15px;
+    font-size: 14px;
+    font-weight: 600;
+    text-transform: uppercase;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    color: #fff;
+    transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.btn-add-to-cart {
+    background: #ff7e5f;
+}
+
+.btn-add-to-cart:hover {
+    background: #feb47b;
+    transform: translateY(-2px);
+}
+
+.btn-add-to-wishlist {
+    background: #6f8372;
+}
+
+.btn-add-to-wishlist:hover {
+    background: #8fa382;
+    transform: translateY(-2px);
+}
+
+/* Product View Page Styles */
+.product-image-container img {
+    max-height: 100%;
+    max-width: 100%;
+    object-fit: cover;
+}
+
+.product-details {
+    padding: 15px;
+}
+
+.product-name {
+    font-size: 24px;
+    font-weight: bold;
+    color: #fff;
+}
+
+.product-path {
+    font-size: 14px;
+    color: #fff;
+}
+
+.product-prices {
+    margin-top: 10px;
+}
+
+.selling-price {
+    font-size: 22px;
+    font-weight: bold;
+    color: #ff7e5f;
+}
+
+.original-price {
+    font-size: 18px;
+    color: #fff;
+    text-decoration: line-through;
+    margin-left: 10px;
+}
+
+.color-selection {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    margin-right: 5px;
+    cursor: pointer;
+    border: 2px solid #ddd;
+    transition: border-color 0.3s ease;
+}
+
+.color-selection:hover {
+    border-color: #ff7e5f;
+}
+
+.input-quantity {
+    width: 50px;
+    text-align: center;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.product-actions .btn {
+    margin-right: 10px;
+}
+
+.product-description {
+    margin-top: 20px;
+}
+
+.related-products .product-card {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.related-products .product-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+.underline {
+    width: 70px; /* Adjust the width of the underline */
+    height: 3px; /* Adjust the thickness of the underline */
+    background-color: #c1a162; /* Set the color of the underline */
+    margin: 10px 0; /* Add spacing around the underline */
 }

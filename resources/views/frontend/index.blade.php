@@ -1,6 +1,6 @@
 @extends('layouts.app')
 
-@section('title', 'EShop')
+@section('title', 'QBuy - Home')
 
 @section('content')
 
@@ -43,25 +43,13 @@
             </button>
     </div>
 
-    {{-- <div class="py-5 bg-white">
-        <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-md-8 text-center">
-                    <h4>{!! $appSetting->page_title ?? 'page_title' !!}</h4>
-                    <div class="underline mx-auto"></div>
-                    <p>
-                       <p>{!! $appSetting->page_description ?? 'page_description' !!}</p>
-                    </p>
-                </div>
-            </div>
-        </div>
-    </div> --}}
-
     <div class="py-5">
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
-                    <h4>Trending Products</h4>
+                    <h4>Trending Products
+                        <a href="{{ url('trending-products') }}" class="btn-view-more">View More</a>
+                    </h4>
                     <div class="underline mb-4"></div>
                 </div>
                 @if ($trendingProducts)
@@ -116,7 +104,7 @@
             <div class="row">
                 <div class="col-md-12">
                     <h4>New Arrivals
-                        <a href="{{ url('new-arrivals') }}" class="btn btn-warning float-end">View More</a>
+                        <a href="{{ url('new-arrivals') }}" class="btn-view-more">View More</a>
                     </h4>
                     <div class="underline mb-4"></div>
                 </div>
@@ -172,7 +160,7 @@
             <div class="row">
                 <div class="col-md-12">
                     <h4>Featured Products
-                        <a href="{{ url('featured-products') }}" class="btn btn-warning float-end">View More</a>
+                        <a href="{{ url('featured-products') }}" class="btn-view-more">View More</a>
                     </h4>
                     <div class="underline mb-4"></div>
                 </div>

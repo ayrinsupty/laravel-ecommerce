@@ -1,6 +1,6 @@
 @extends('layouts.app')
 
-@section('title', 'Thank You for Shopping')
+@section('title', 'Thank You!')
 
 @section('content')
 
@@ -12,8 +12,8 @@
                         <h5 class="alert alert-success">{{ session('message') }}</h5>
                     @endif
                     <div class="p-4 shadow bg-white">
-                        <h2>Your Logo</h2>
-                        <h4>Thank You for Shopping with EShop</h4>
+                        <h2>🛒QBuy</h2>
+                        <h4>Thank You for Shopping with QBuy!</h4>
                         <a href="{{ url('collections') }}" class="btn btn-warning">Shop now</a>
                     </div>
                 </div>

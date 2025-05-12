@@ -9,7 +9,7 @@ class SliderSeeder extends Seeder
     public function run()
     {
         Slider::create([
-            'title' => 'Welcome to EShop',
+            'title' => 'Welcome to QBuy',
             'description' => 'Discover the best products at unbeatable prices.',
             'image' => 'uploads/slider/slider1.jpg', // Ensure this path exists
             'status' => 1,

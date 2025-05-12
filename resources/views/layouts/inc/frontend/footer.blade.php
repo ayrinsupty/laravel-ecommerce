@@ -55,7 +55,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-8">
-                    <p class=""> &copy; {{ date('Y') }} - EShop. All rights reserved.</p>
+                    <p class=""> &copy; {{ date('Y') }} - QBuy. All rights reserved.</p>
                 </div>
                 <div class="col-md-4">
                     <div class="social-media">

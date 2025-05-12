@@ -108,7 +108,7 @@
         <thead>
             <tr>
                 <th width="50%" colspan="2">
-                    <h2 class="text-start">EShop</h2>
+                    <h2 class="text-start">QBuy</h2>
                 </th>
                 <th width="50%" colspan="2" class="text-end company-data">
                     <span>Invoice Id: {{ $order->id }}</span> <br>
@@ -211,7 +211,7 @@
 
     <br>
     <p class="text-center">
-        Thank your for shopping with EShop
+        Thank your for shopping with QBuy!
     </p>
 
 </body>

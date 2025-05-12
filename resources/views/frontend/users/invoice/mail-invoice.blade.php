@@ -107,7 +107,7 @@
     <div class="text-center">
         <h2>Thank you for your order! </h2>
         <p>
-            Thank you for purchasing with {{ $appSetting->website_name ?? 'EShop'}}
+            Thank you for purchasing with {{ $appSetting->website_name ?? 'QBuy' }}. <br>
             <br>
             Your order items and details are provided below.
         </p>
@@ -220,7 +220,7 @@
 
     <br>
     <p class="text-center">
-        Thank you for shopping with EShop! If you have any questions, feel free to contact us 
+        Thank you for shopping with QBuy! If you have any questions, feel free to contact us 
         at {{ $appSetting->email }} or visit our website at {{ $appSetting->website_url ?? '#' }}.
     </p>
 

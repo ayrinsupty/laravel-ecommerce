@@ -17,19 +17,19 @@ class SettingsTableSeeder extends Seeder
     {
         Setting::create([
             // Default values for the settings
-            'website_name' => 'My EShop',
-            'website_url' => 'https://example.com',
-            'page_title' => 'Welcome to My EShop',
+            'website_name' => '🛒 QBuy',
+            'website_url' => 'https://www.QBuy.com',
+            'page_title' => 'Welcome to QBuy',
             'page_description' => 'Discover the best products at unbeatable prices.',
             // Meta tags for SEO
-            'meta_title' => 'My EShop - Your Online Shopping Destination',
+            'meta_title' => 'QBuy - Your Online Shopping Destination',
             'meta_keyword' => 'e-commerce, online shopping, buy online',
             'meta_description' => 'The best place to buy products online.',
             // Contact information
-            'address' => 'Ervěnická 1046, 431 11 Jirkov, Czech Republic',
-            'phone1' => '+420 776 592 542',
+            'address' => 'Jirkov, Czech Republic',
+            'phone1' => '776-592-542',
             'phone2' => '098-765-4321',
-            'email1' => 'ayrinsupty@hotmail.com',
+            'email1' => 'QBuy@example.com',
             'email2' => 'info@example.com',
             // Social media links
             // These can be empty or null if not used

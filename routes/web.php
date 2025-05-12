@@ -20,7 +20,6 @@ use App\Http\Controllers\Admin\UserController;
 use App\Http\Controllers\Frontend\UserController as FrontendUserController;
 
 Auth::routes();
-
 /*
 |--------------------------------------------------------------------------
 | Frontend Routes
@@ -28,11 +27,17 @@ Auth::routes();
 */
 Route::controller(FrontendController::class)->group(function() {
     Route::get('/', 'index');
+    Route::get('/home', function () {
+    return redirect('/');
+});
 
     // Collections
     Route::get('/collections', 'categories');
     Route::get('/collections/{category_slug}', 'products');
     Route::get('/collections/{category_slug}/{product_slug}', 'productView');
+
+    // New Arrivals
+    Route::get('/trending-products', 'trendingProducts');
 
     // New Arrivals
     Route::get('/new-arrivals', 'newArrival');
@@ -43,6 +48,7 @@ Route::controller(FrontendController::class)->group(function() {
     // Search Bar
     Route::get('search', 'searchProducts');
 });
+
 
 Route::middleware(['auth'])->group(function () {
 

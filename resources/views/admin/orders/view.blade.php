@@ -41,8 +41,9 @@
                             <h6>Tracking Id/No.: {{ $order->tracking_no }}</h6>
                             <h6>Ordered Date: {{ $order->created_at->format('d-m-Y h:i A') }}</h6>
                             <h6>Payment Mode: {{ $order->payment_mode }}</h6>
+                            {{-- The "border" class adds a border, "p-2" adds padding, and "text-success" applies a green text color --}}
                             <h6 class="border p-2 text-success">
-                                Order status message: <span class="text-uppercase">{{ $order->status_message }}</span>
+                                Order status message: <span class="text-uppercase">{{ e($order->status_message) }}</span>
                             </h6>
                         </div>
                         <div class="col-md-6">
