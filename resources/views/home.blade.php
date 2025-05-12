@@ -1,6 +1,6 @@
 @extends('layouts.app')
 
-@section('title', 'Welcome to Laravel Ecommerce')
+@section('title', 'Welcome to QBUY')
 
 @section('content')
 <div class="home-container">
